@@ -39,7 +39,7 @@ const UpdateStudent = () => {
     <div className="flex flex-col justify-center items-center px-5 md:px-0">
       <div className="w-full w-full  md:w-5/6 max-auto bg-white mt-5 rounded-lg p-5">
         <h1 className="text-center text-2xl text-black mb-1">
-          Student Information
+         Update Student Information
         </h1>{" "}
         <hr />
         <form
@@ -137,7 +137,7 @@ const UpdateStudent = () => {
               <span class="label-text text-black">Select Class</span>
             </label>
             <select 
-            defaultValue={data.class}
+            defaultValue={data.Class}
             name="class"
              class="select select-bordered w-full bg-white"
              {...register("Class",{
