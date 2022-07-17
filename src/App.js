@@ -7,6 +7,8 @@ import AddStudent from "./Components/Students/AddStudent";
 import AllStudent from "./Components/Students/AllStudent";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import ViewStudent from "./Components/Students/ViewStudent";
+import UpdateStudent from "./Components/Students/UpdateStudent";
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Dashboard />}>
-          <Route path="/addstudent" element={<AddStudent/>} ></Route>
-          <Route path="/allstudent" element={<AllStudent/>} ></Route>
+          <Route path="addstudent" element={<AddStudent/>} ></Route>
+          <Route path="allstudent" element={<AllStudent/>} ></Route>
+          <Route path="viewstudent/:id" element={<ViewStudent/>} ></Route>
+          <Route path="edittudent/:id" element={<UpdateStudent/>} ></Route>
         </Route>
       </Routes>
       <ToastContainer/>
